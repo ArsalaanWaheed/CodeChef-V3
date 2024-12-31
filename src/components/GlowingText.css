@@ -1,0 +1,41 @@
+.glowing-text {
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #19420e;
+    position: relative;
+    animation: glow 5s infinite linear;
+  }
+
+  .glowing-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px; 
+    background-image: url('https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9120.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+  
+  .large-bold-text {
+    font-weight: bold; 
+  }
+ 
+  
+  @keyframes glow {
+    0%, 18%, 20%, 50%, 60%, 65%, 80%, 90%, 92% {
+      color: #0e3742;
+      text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50.1%, 60.1%, 65.1%, 80.1%, 90.1%, 92.1%, 100% {
+      color: #fff;
+      text-shadow: 0 0 10px #4ed644, 0 0 20px #4ed644, 0 0 40px #4ed644, 
+                   0 0 80px #73e36b, 0 0 160px #73e36b;
+    }
+  }
+  

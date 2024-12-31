@@ -1,0 +1,26 @@
+.footer {
+  background: linear-gradient(to right, #1b1e1b, #343834);
+  color: white;
+}
+
+.footer .social-icon {
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #223624;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 6px rgba(84, 176, 56, 0.933);
+  background-color: transparent;
+  color: #5bcd3b;
+}
+
+.footer .social-container {
+  text-align: justify;
+  padding-left: 100px;
+}
