@@ -9,7 +9,13 @@ import { Home } from './home';
 function App() {
   return (
     <BrowserRouter>
-      <Navbar /> 
+      <Navbar scrollToTop={function (): void {
+        throw new Error('Function not implemented.');
+      } } scrollToEvents={function (): void {
+        throw new Error('Function not implemented.');
+      } } scrollToContact={function (): void {
+        throw new Error('Function not implemented.');
+      } } /> 
       <Routes>
         <Route path='/home' element={<Home />} /> 
         <Route path="/teams" element={<Teams />} />

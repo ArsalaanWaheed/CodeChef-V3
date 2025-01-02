@@ -32,6 +32,7 @@ import SomyaSaxena from './team_photos/SomyaSaxena.jpg';
 import FatimaArif from './team_photos/FatimaArif.jpg';
 import ShubhVarshney from './team_photos/ShubhVarshney.jpg';
 import AbbasSafvi from './team_photos/AbbasSafvi.jpeg';
+import SabaFeroz from './team_photos/SabaFeroz.jpg';
 
 const teams = [
   {
@@ -64,7 +65,7 @@ const teams = [
       { name: 'Maimoona', role: 'Management Team Lead', photo: Maimoona, contact: 'maimoonaqadri23@gmail.com', linkedin: 'https://www.linkedin.com/in/maimoona-qadri-763753258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
       { name: 'Ashraf Ahmad Nasir', role: 'Management Team Member', photo: AshrafAhmad, contact: 'ashrafahmad4k@gmail.com', linkedin: 'https://www.linkedin.com/in/ashraf-ahmad-0a1b6332a?trk=contact-info' },
       { name: 'Mohd Zeeshan Jafri', role: 'Management Team Member', photo: MohdZeeshan, contact: 'jafrizeeshan69@gmail.com', linkedin: 'https://www.linkedin.com/in/mohd-zeeshan-jafri-060398190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
-      { name: 'Saba Feroz Khan', role: 'Management Team Member', photo: '/images/charlie.jpg', contact: 'sabaferoz.256@gmail.com', linkedin: 'https://www.linkedin.com/in/saba-khan-a10418316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
+      { name: 'Saba Feroz Khan', role: 'Management Team Member', photo:SabaFeroz, contact: 'sabaferoz.256@gmail.com', linkedin: 'https://www.linkedin.com/in/saba-khan-a10418316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
       { name: 'Ameer Hamza', role: 'Management Team Member', photo: AmeerHamza, contact: 'gm1036@myamu.ac.in', linkedin: 'https://www.linkedin.com/in/ameer-hamza-629896318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
       { name: 'Abdullah Zaidi', role: 'Management Team Member', photo: AbdullahZaidi, contact: 'abdullahzaidi1934@gmail.com', linkedin: 'https://www.linkedin.com/in/abdullah-zaidi-118181237/' },
       { name: 'Mohammed Zaid', role: 'Management Team Member', photo: MohdZaid, contact: 'zaidgl9226@gmail.com', linkedin: 'https://www.linkedin.com/in/zaid9226?trk=contact-info' },
@@ -76,7 +77,7 @@ const teams = [
     title: 'PR Team',
     members: [
       { name: 'Asna Fatima', role: 'PR Coordinator', photo: AsnaFatima, contact: 'Asnafatimah6@gmail.com', linkedin: 'http://linkedin.com/in/asna-fatimah6/' },
-      { name: 'Altaf Qamar', role: 'Joint PR Coordinator', photo: AltafQamar, contact: 'altafqmr@gmail.com', linkedin: 'https://linkedin.com/in/hannahblue' },
+      { name: 'Altaf Qamar', role: 'Joint PR Coordinator', photo: AltafQamar, contact: 'altafqmr@gmail.com', linkedin: 'https://www.linkedin.com/in/altaf-qamar-b23841295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
     ],
   },
   {
@@ -86,7 +87,7 @@ const teams = [
       { name: 'Sania Siddiqui', role: 'CP Team Lead', photo: SaniaSiddiqui, contact: 'sania.siddiqui231@gmail.com', linkedin: 'https://www.linkedin.com/in/sania--siddiqui' },
       { name: 'Mohammad Amaan', role: 'CP Team Member', photo:MohdAmaan, contact: 'mohammadamaan293@gmail.com', linkedin: 'https://www.linkedin.com/in/mohammad-amaan-9b19b4295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
       { name: 'Mohd Faiz', role: 'CP Team Member', photo: MohdFaiz, contact: 'mohdfaiz11034@gmail.com', linkedin: 'https://www.linkedin.com/in/mohd-faiz-81b17b2a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
-      { name: 'Umar', role: 'CP Team Member', photo: Umar, contact: 'umark79918@gmail.com', linkedin: 'https://linkedin.com/in/wendybronze' },
+      { name: 'Umar', role: 'CP Team Member', photo: Umar, contact: 'umark79918@gmail.com', linkedin: 'https://www.linkedin.com/in/umar-khan-0a78b5313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
       { name: 'Daneial Javed', role: 'CP Team Member', photo: DanielJaved, contact: 'daneyalkhan007@outlook.com', linkedin: 'https://www.linkedin.com/in/daneial-javaid-713571294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
       { name: 'Riyansh Gupta', role: 'CP Team Member', photo: RiyanshGupta, contact: 'zfsiddiqui2022@gmail.com', linkedin: 'www.linkedin.com/in/zara-fatima-siddiqui-43b135288' },
       { name: 'Zara Fatima Siddiqui', role: 'CP Team Volunteer', photo: ZaraFatima, contact: 'zfsiddiqui2022@gmail.com', linkedin: 'www.linkedin.com/in/zara-fatima-siddiqui-43b135288' },
@@ -105,15 +106,15 @@ const teams = [
     title: 'Editorial Team',
     members: [
       { name: 'Syed Faheem Ahmad', role: 'Editorial Team Head', photo: SyedFaheem, contact: 'syedfaheemahmad2002@gmail.com', linkedin: 'https://www.linkedin.com/in/syed-faheem-ahmad-05a78b256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
-      { name: 'Homa Mahmood', role: 'Editorial Team Member', photo: HomaMahmood, contact: 'homamahmood715@gmail.com', linkedin: 'https://linkedin.com/in/liamyellow' },
-      { name: 'Somya Saxena', role: 'Editorial Team Member', photo: SomyaSaxena, contact: 'somyasaxena0107@gmail.com', linkedin: 'https://linkedin.com/in/miapurple' },
+      { name: 'Homa Mahmood', role: 'Editorial Team Member', photo: HomaMahmood, contact: 'homamahmood715@gmail.com', linkedin: 'https://www.linkedin.com/in/homa-mahmood-000019275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+      { name: 'Somya Saxena', role: 'Editorial Team Member', photo: SomyaSaxena, contact: 'somyasaxena0107@gmail.com', linkedin: 'https://www.linkedin.com/in/somya-saxena-064217296' },
       { name: 'Sadia Aiman', role: 'Editorial Team Member', photo: SadiaAiman, contact: 'sadiaaiman05@gmail.com', linkedin: 'https://www.linkedin.com/in/sadia-aiman-a535b52a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
     ],
   },
   {
     title: 'Graphics Team',
     members: [
-      { name: 'Quetba Ahsan', role: 'Graphic Designer', photo: '/images/paul.jpg', contact: 'qutebaahsan@gmail.com', linkedin: 'https://linkedin.com/in/paulgray' },
+      { name: 'Quteba Ahsan', role: 'Graphic Designer', photo: '/images/paul.jpg', contact: 'qutebaahsan@gmail.com', linkedin: 'https://www.linkedin.com/in/quteba-ahsan-6529992a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
       { name: 'Sana', role: 'Graphic Designer', photo: Sana, contact: 'sanamamnoon2580@gmail.com', linkedin: 'https://www.linkedin.com/in/sana-mamnoon-51255726a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
       { name: 'Fatima Arif', role: 'Graphic Designer', photo: FatimaArif, contact: 'fatima.arif13071989@gmail.com', linkedin: 'https://www.linkedin.com/in/fatima-arif-2b452931a/' },
     ],
@@ -141,7 +142,7 @@ const Teams = () => {
                   <img 
                     src={member.photo}
                     alt={member.name}
-                    className="w-56 h-56 mx-auto mb-4 border-4 border-green-400 object-cover transform transition duration-700 hover:scale-110 animated-image"
+                    className="w-56 h-56 mx-auto mb-4 border-4 rounded-lg border-green-400 object-cover transform transition duration-700 hover:scale-110 animated-image"
                   />
                   <h3 className="text-xl font-medium">{member.name}</h3>
                   <p className="text-sm">{member.role}</p>
@@ -150,7 +151,7 @@ const Teams = () => {
                       href={`mailto:${member.contact}`}
                       className="text-sm inline-block"
                     >
-                      <FaEnvelope size={20} className="text-white hover:text-green-500" />
+                      <FaEnvelope size={20} className="text-black dark:text-white hover:text-green-500" />
                     </a>
                     <a
                       href={member.linkedin}
@@ -158,7 +159,7 @@ const Teams = () => {
                       rel="noopener noreferrer"
                       className="text-sm inline-block"
                     >
-                      <FaLinkedin size={20} className="text-white hover:text-green-500" />
+                      <FaLinkedin size={20} className="text-black dark:text-white hover:text-green-500" />
                     </a>
                   </div>
                 </div>

@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState ,useRef } from 'react';
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'; 
 import './ContactUs.css'; 
+import emailjs from '@emailjs/browser';
 
-const ContactUsForm = () => {
+interface ContactUsProps {
+  serviceId: string;
+  templateId: string;
+  publicKey: string;
+}
+
+export const ContactUsForm: React.FC<ContactUsProps> = ({ serviceId, templateId, publicKey }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -24,11 +31,39 @@ const ContactUsForm = () => {
     console.log('Form Submitted:', formData);
   };
 
+
+
+    const form = useRef<HTMLFormElement>(null);
+  
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm(serviceId, templateId, form.current!, { publicKey })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            setFormData((data)=>{
+              return {
+                name: '',
+                phone: '',
+                email: '',
+                enquiry: '',
+              }
+            })
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
+  
+
   return (
-    <div className="mt-10 max-w-7xl mx-auto p-8 rounded-xl shadow-xl">
-      <div className="flex flex-col sm:flex-row items-start justify-between space-y-8 sm:space-y-0 sm:space-x-12">
+    <div className="mt-10 max-w-7xl mx-auto p-2 pl-[2vw] sm:p-8 rounded-xl shadow-xl">
+      <div className="flex flex-col sm:flex-row  w-[85vw] sm:w-[100%] items-start justify-between space-y-8 sm:space-y-0 sm:space-x-12">
         {/* Left Side: Contact Form */}
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form onSubmit={sendEmail} className="contact-form  " ref={form} >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <label htmlFor="name" className="form-label">Full Name</label>
@@ -94,9 +129,9 @@ const ContactUsForm = () => {
         </form>
 
         {/* Right Side: Text and Social Media Icons */}
-        <div className="contact-info">
-          <h2 className="contact-heading">Contact Us</h2>
-          <p className="contact-text">
+        <div className="contact-info ">
+          <h2 className="contact-heading dark:text-white">Contact Us</h2>
+          <p className="contact-text dark:text-white">
             We’d love to hear from you. Please fill out the form on the left, or reach out to us directly on our social media.
           </p>
           <div className="social-icons">

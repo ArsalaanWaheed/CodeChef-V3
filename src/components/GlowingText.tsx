@@ -4,7 +4,7 @@ import './GlowingText.css';
 const GlowingText = () => {
   return (
     <div className="glowing-text-container">
-      <h2 contentEditable="true" className="glowing-text large-bold-text">
+      <h2 contentEditable="true" className="glowing-text large-bold-text  sm:text-[6rem]">
         CODECHEF ZHCET
       </h2>
       <div className="text-center mt-4">

@@ -41,15 +41,15 @@ const events = [
 
 const Events = () => {
   return (
-    <section id="events" className="py-16 text-white">
+    <section id="events" className="py-16 text-black dark:text-white">
       <h2 className="text-4xl font-poppins font-bold text-center mb-8">
         Our Past Events
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center pt-20">
+      <div className="  sm:pl-[2vw] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 justify-center items-center pt-20">
         {events.map((event, index) => (
           <div
             key={index}
-            className="relative group border-4 border-green-500 rounded-md shadow-lg overflow-hidden w-64 h-64 flex justify-center items-center"
+            className="relative group border-4 border-green-500 rounded-md shadow-lg overflow-hidden w-[45vw] h-44 sm:w-64 md:h-64 xl:w-[20rem] xl:h-[20rem] flex justify-center items-center"
           >
             <img
               src={event.image}

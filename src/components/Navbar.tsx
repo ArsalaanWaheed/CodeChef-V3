@@ -6,7 +6,13 @@ import MobileMenu from './MobileMenu';
 import ThemeToggle from './ThemeToggle';
 import { useTheme } from '../hooks/useTheme';
 
-const Navbar = ({ scrollToTop, scrollToEvents }: { scrollToTop: () => void, scrollToEvents: () => void }) => {
+interface NavbarMenuProps {
+  scrollToTop: () => void;
+  scrollToEvents: () => void;
+  scrollToContact: () => void;
+}
+
+const Navbar:React.FC<NavbarMenuProps> = ({ scrollToTop, scrollToEvents,scrollToContact }: { scrollToTop: () => void, scrollToEvents: () => void ,scrollToContact:()=>void}) => {
   const [isOpen, setIsOpen] = useState(false);
   const { isDark, toggle } = useTheme();
 
@@ -17,7 +23,7 @@ const Navbar = ({ scrollToTop, scrollToEvents }: { scrollToTop: () => void, scro
           <NavbarBrand />
           <div className="flex items-center space-x-4">
             <ThemeToggle isDark={isDark} toggle={toggle} />
-            <NavbarMenu scrollToTop={scrollToTop} scrollToEvents={scrollToEvents} />
+            <NavbarMenu  scrollToEvents={scrollToEvents} scrollToContact={scrollToContact} scrollToTop={scrollToTop}/>
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -29,7 +35,7 @@ const Navbar = ({ scrollToTop, scrollToEvents }: { scrollToTop: () => void, scro
           </div>
         </div>
       </div>
-      <MobileMenu isOpen={isOpen} />
+      <MobileMenu scrollToEvents={scrollToEvents} scrollToContact={scrollToContact} scrollToTop={scrollToTop} isOpen={isOpen} />
     </nav>
   );
 };

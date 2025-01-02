@@ -21,9 +21,9 @@ const Footer: React.FC = () => {
         {/* Navigation Links */}
         <div className="text-center md:text-left">
           <div className="text-center grid grid-cols-2 gap-2 pt-24">
-            <a href="#" className="hover:text-gray-400">Home</a>
-            <a href="#" className="hover:text-gray-400">Team</a>
-            <a href="#" className="hover:text-gray-400">Events</a>
+            <a href="/home" className="hover:text-gray-400">Home</a>
+            <a href="/teams" className="hover:text-gray-400">Team</a>
+            <a href="/home" className="hover:text-gray-400">Events</a>
             <a href="#" className="hover:text-gray-400">Sponsors</a>
           </div>
         </div>

@@ -1,5 +1,5 @@
 .glowing-text {
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: bold;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -15,6 +15,8 @@
     justify-content: center;
     align-items: center;
     height: 600px; 
+  
+    
     background-image: url('https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9120.jpg');
     background-size: cover; 
     background-position: center; 
