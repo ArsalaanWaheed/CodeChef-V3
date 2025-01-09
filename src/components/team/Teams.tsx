@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { FaLinkedin, FaEnvelope } from 'react-icons/fa';  
 import JauwadKhan from './team_photos/jauwadKhan.png';
 import OjasSharma from './team_photos/OjasSharma.jpg';
@@ -33,6 +33,12 @@ import FatimaArif from './team_photos/FatimaArif.jpg';
 import ShubhVarshney from './team_photos/ShubhVarshney.jpg';
 import AbbasSafvi from './team_photos/AbbasSafvi.jpeg';
 import SabaFeroz from './team_photos/SabaFeroz.jpg';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const teams = [
   {
@@ -129,19 +135,28 @@ const teams = [
 ];
 
 const Teams = () => {
+ 
+
+  useEffect(()=>{
+    AOS.init()
+  },[])
+
+
+
   return (
     <div className="bg-gray-50 dark:bg-black text-gray-900 dark:text-gray-50 min-h-screen py-10 pt-24">
-      <h1 className="text-5xl font-bold text-center mb-10">Meet Our Team</h1>
+      <h1 className="text-5xl font-bold text-center mb-10 " data-aos="fade-down" ><span>Meet</span> <span>Our</span> <span>Team</span></h1>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {teams.map((team) => (
           <div key={team.title} className="mb-12">
             <h2 className="text-3xl font-semibold text-white-400 mb-6">{team.title}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {team.members.map((member) => (
-                <div key={member.name} className="text-center">
+                <div data-aos="flip-left" key={member.name}  className=" text-center">
                   <img 
                     src={member.photo}
                     alt={member.name}
+                    
                     className="w-56 h-56 mx-auto mb-4 border-4 rounded-lg border-green-400 object-cover transform transition duration-700 hover:scale-110 animated-image"
                   />
                   <h3 className="text-xl font-medium">{member.name}</h3>

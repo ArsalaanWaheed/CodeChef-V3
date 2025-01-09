@@ -20,6 +20,7 @@ function App() {
         <Route path='/home' element={<Home />} /> 
         <Route path="/teams" element={<Teams />} />
         <Route path="/gallery" element={<Gallery />} />
+
       </Routes>
       <Footer /> 
     </BrowserRouter>

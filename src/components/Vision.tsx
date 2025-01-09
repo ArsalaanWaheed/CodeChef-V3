@@ -2,9 +2,9 @@ import React from 'react';
 
 const Vision = () => {
   return (
-    <section className="py-12 bg-black text-white">
+    <section className="py-12 bg-black text-white select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
-        <h2 className="text-4xl font-poppins font-bold text-center mb-6">Our Vision</h2>
+        <h2  className="text-4xl font-poppins font-bold text-center mb-6">Our Vision</h2>
         <div className="md:flex md:items-center md:space-x-6 pt-18">
           {/* Image Section */}
           <div className="flex justify-center md:w-1/2 mb-6 md:mb-0">

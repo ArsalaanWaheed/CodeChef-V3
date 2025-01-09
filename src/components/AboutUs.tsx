@@ -1,8 +1,10 @@
 import React from 'react';
+import AboutUsBg from './Footer/AboutUsBg.mp4';
 
 const AboutUs = () => {
   return (
-    <section className="py-16 px-4  rounded-lg  mt-12">
+    <section className="py-16 px-4  rounded-lg  mt-12 select-none" >
+      {/* <video src={AboutUsBg} height="750" autoPlay loop className='display transition-all '></video> */}
       <h2 className="text-4xl font-poppins font-bold text-black dark:text-white text-center mb-4">
         About Us
       </h2>

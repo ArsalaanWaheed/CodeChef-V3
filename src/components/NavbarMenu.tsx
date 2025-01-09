@@ -27,6 +27,7 @@ export const NavbarMenu:React.FC<NavbarMenuProps> = ({scrollToTop,scrollToEvents
     <div className="hidden md:flex items-center space-x-8">
       {menuItems.map((item) => (
         <Link
+        
           key={item.name}
           
           onClick={(e) => {
